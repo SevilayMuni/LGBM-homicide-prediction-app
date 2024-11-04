@@ -24,19 +24,5 @@ with st.sidebar:
 
 
 
-st.write('**model**')
-pickled_model_app = pickle.load(open('model_app.pkl', 'rb'))
-def process(dict):
-    user_df = pd.DataFrame(dict)
-    categ_col = user_df.select_dtypes(include = ['object']).columns.to_list()
-    user_df[categ_col] = user_df[categ_col].astype('category')
-    pred = round(pickled_model_app.predict(user_df).item())
-    return pred
-
-user_dict = {'Agentype': [Agentype], 'Year': [Year], 'Month': [Month], 
-             'Murder': [Murder], 'VicAge': [VicAge], 'VicSex': [VicSex], 
-             'VicRace':[VicRace], 'Weapon': [Weapon], 
-             'Relationship': [Relationship], 'Circumstance':[Circumstance], 
-             'VicCount': [VicCount], 'Region':[Region]}
 
 
