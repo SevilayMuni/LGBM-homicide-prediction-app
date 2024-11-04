@@ -9,6 +9,7 @@ st.write('The project is dedicated to all murder victims and their families whos
 st.info('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 st.write('The model data source is Murder Accountability Project')
 
+st.write('**model**')
 pickled_model_app = pickle.load(open('model_app.pkl', 'rb'))
 def process(dict):
     user_df = pd.DataFrame(dict)
