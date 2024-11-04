@@ -9,6 +9,21 @@ st.write('The project is dedicated to all murder victims and their families whos
 st.info('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 st.write('The model data source is Murder Accountability Project')
 
+# Input features
+with st.sidebar:
+  st.header('Input Features')
+  Agentype = st.selectbox('Agentype', ('local', 'state', 'federal'))
+  Year = st.slider('Year', 1976, 2021)
+  Month = st.slider('Month', 1, 12)
+  Murder = st.selectbox('Murder', (1, 0))
+  VicAge = st.slider('VicAge', 0, 99)
+  VicSex = st.selectbox('VicSex', ('Male', 'Female', 'Unknown'))
+  VicRace = st.selectbox('VicRace', ('unknown', 'white', 'indian', 'black', 'asian', 'islander'))
+  Weapon = st.selectbox('Weapon', ('handgun', 'sharp object', 'other', 'explosives', 'blunt object', 'firearm', 'personal weapons - beating', 'strangulation', 'pushed - thrown', 'fire', 'drugs', 'drowning', 'asphyxiation', 'poison', 'not reported'))
+  VicSex = st.selectbox('VicSex', ('Male', 'Female', 'Unknown'))
+
+
+
 st.write('**model**')
 pickled_model_app = pickle.load(open('model_app.pkl', 'rb'))
 def process(dict):
@@ -18,10 +33,10 @@ def process(dict):
     pred = round(pickled_model_app.predict(user_df).item())
     return pred
 
-user_dict = {'Agentype': ['local'], 'Year': [1997], 'Month': [6], 
-             'Murder': [1], 'VicAge': [34], 'VicSex': ['male'], 
-             'VicRace':['unknown'], 'Weapon': ['handgun'], 
-             'Relationship': ['unknown'], 'Circumstance':['other argument'], 
-             'VicCount': [1], 'Region':['west']}
+user_dict = {'Agentype': [Agentype], 'Year': [Year], 'Month': [Month], 
+             'Murder': [Murder], 'VicAge': [VicAge], 'VicSex': [VicSex], 
+             'VicRace':[VicRace], 'Weapon': [Weapon], 
+             'Relationship': [Relationship], 'Circumstance':[Circumstance], 
+             'VicCount': [VicCount], 'Region':[Region]}
 
 
