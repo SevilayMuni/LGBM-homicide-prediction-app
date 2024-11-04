@@ -18,4 +18,10 @@ def process(dict):
     pred = round(pickled_model_app.predict(user_df).item())
     return pred
 
+user_dict = {'Agentype': ['local'], 'Year': [1997], 'Month': [6], 
+             'Murder': [1], 'VicAge': [34], 'VicSex': ['male'], 
+             'VicRace':['unknown'], 'Weapon': ['handgun'], 
+             'Relationship': ['unknown'], 'Circumstance':['other argument'], 
+             'VicCount': [1], 'Region':['west']}
+
 
