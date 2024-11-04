@@ -1,9 +1,10 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 📦 Homicide Solve Prediction App
 
-Description of the app ...
+The project is dedicated to all murder victims and their families whose justice has not been served yet. 
+
+The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities. 
+
+The model data source is [Murder Accountability Project](https://www.murderdata.org/)
 
 ## Demo App
 
@@ -23,3 +24,5 @@ This is filler text, please replace this with a explanatory text about further r
 - Resource 1
 - Resource 2
 - Resource 3
+
+*One's destination is never a place but rather a new way of seeing things. - Henry Miller*
