@@ -7,8 +7,8 @@ The project aims to conduct data science research and demonstrate the importance
 The model data source is [Murder Accountability Project](https://www.murderdata.org/)
 
 ## Check Out My Application
-![image]({BadgeURLHere})
-[![My Prediction App] <img src = "https://static.streamlit.io/badges/streamlit_badge_black_white.svg" width = 1000](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
+
+[[My Prediction App] <img src = "https://static.streamlit.io/badges/streamlit_badge_black_white.svg" width = 1000](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
 
 ## Model Evaluation
