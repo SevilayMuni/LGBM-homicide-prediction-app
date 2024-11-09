@@ -52,7 +52,7 @@ tab1.info(f"Predicted Result: {predicted_class}")
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
 
-tab2.markdown(
+st.markdown(
         """
         <style>
         .streamlit-expanderHeader p {
