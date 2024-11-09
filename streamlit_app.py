@@ -49,16 +49,14 @@ predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 # Display result
 tab1.info(f"Predicted Result: {predicted_class}")
 
+with tab1.expander("Feature Importance Plot 📉"):
+    st.markdown(''':violet[The chart above shows lightGBM feature importance plot based on gain.  
+        It states what features heavily impacted the model's decision.]''')
+    st.image("./images/Gain-Feature-Importance-Plot.png")
+
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
 # ----------------------
-with tab1.expander("Feature Importance Plot"):
-    st.write('''
-        The chart above shows lightGBM feature importance plot based on gain.
-        It states what features heavily impacted the model's decision. ''')
-    st.image("./images/Gain-Feature-Importance-Plot.png")
-
-
 
 tab2.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
 
