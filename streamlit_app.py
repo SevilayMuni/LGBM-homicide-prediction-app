@@ -9,8 +9,7 @@ pickled_model_app = joblib.load('./model_app.pkl')
 
 st.title('🕵🏻 Homicide Solve Prediction App')
 st.write('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
-st.info('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
-st.info('The model data source is Murder Accountability Project')
+st.info('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities. The model data source is Murder Accountability Project')
 
 # Input features
 with st.sidebar:
@@ -43,7 +42,7 @@ def process(user_dict):
     return pred
 
 prediction = process(user_dict)
-predicted_class = {0: 'unsolved', 1: 'solved'}[prediction]
+predicted_class = {0: 'UNSOLVED', 1: 'SOLVED'}[prediction]
 
 # Display result
 st.write(f"Probable Result: {predicted_class}")
