@@ -56,9 +56,8 @@ with tab2.expander("Description Table on Input Features"):
     st.image("./images2/feature-table.png")
 
 with tab2.expander("Model Introduction"):
-    multi = '''Light Gradient Boosting Machine (LightGBM) is a high-performance, distributed, and efficient gradient-boosting framework that focuses on tree-based learning algorithms.   
-    It was developed by Microsoft and is widely used for both classification and regression tasks.   
-    LightGBM is designed to be memory-efficient and highly optimized, making it a popular choice for machine learning practitioners'''
+    multi = ''':blue[Light Gradient Boosting Machine (LightGBM) is a high-performance, distributed, and efficient gradient-boosting framework that focuses on tree-based learning algorithms.   
+    It was developed by Microsoft and is widely used for both classification and regression tasks.]'''
     st.markdown(multi)
 
 
