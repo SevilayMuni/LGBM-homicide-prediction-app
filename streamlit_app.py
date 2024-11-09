@@ -60,7 +60,7 @@ with tab2.expander("Feature Importance Plot"):
         It states what features heavily impacted the model's decision.]''')
     st.image("./images2/Gain-Feature-Importance-Plot.png")
 
-with tab3.container():
+with tab3.container(border = True):
     st.image("./images2/case-year-histogram.png")
     st.image("./images2/victim-age-VS-offender-race.png")
     st.image("./images2/victim-VS-offender-age.png")
