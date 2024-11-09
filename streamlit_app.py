@@ -9,7 +9,7 @@ pickled_model_app = joblib.load('./model_app.pkl')
 
 tab1, tab2, tab3 = st.tabs(["Prediction", "Info", "Charts"])
 
-tab1.header('🕵🏻 Homicide Solve Prediction App')
+tab1.header('🕵🏻 Justice Forecast App: Solvability Analysis for Homicide Cases')
 tab1.subheader('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
 tab1.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 
@@ -52,18 +52,14 @@ tab1.info(f"Predicted Result: {predicted_class}")
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
 
-st.markdown(
-        """
-        <style>
-        .streamlit-expanderHeader p {
-            font-size: 100px;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
 with tab2.expander("Description Table on Input Features"):
     st.image("./images2/feature-table.png")
+
+with tab2.expander("Model Introduction"):
+    st.write("Light Gradient Boosting Machine (LightGBM) is a high-performance, distributed, and efficient gradient-boosting framework that focuses on tree-based learning algorithms.  
+    It was developed by Microsoft and is widely used for both classification and regression tasks.   
+    LightGBM is designed to be memory-efficient and highly optimized, making it a popular choice for machine learning practitioners.")
+
 with tab2.expander("Feature Importance Plot"):
     st.markdown(''':violet[The chart above shows lightGBM feature importance plot based on gain.  
         It states what features heavily impacted the model's decision.]''')
