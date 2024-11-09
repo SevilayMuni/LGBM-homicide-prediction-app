@@ -6,13 +6,10 @@ The project aims to conduct data science research and demonstrate the importance
 
 The model data source is [Murder Accountability Project](https://www.murderdata.org/)
 
-## Demo App
+## Check Out My Application
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![My Prediction App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
-## GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
 
 ## Section Heading
 
