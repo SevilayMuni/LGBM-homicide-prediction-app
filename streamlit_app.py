@@ -48,5 +48,5 @@ predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 st.info(f"Predicted Result: {predicted_class}")
 
 st.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
-st.markdown('The model data source is ***Murder Accountability Project***.
+st.markdown('The model data source is ***Murder Accountability Project***.')
 
