@@ -8,8 +8,7 @@ The model data source is [Murder Accountability Project](https://www.murderdata.
 
 ## Check Out My Application
 
-[<img src = "https://static.streamlit.io/badges/streamlit_badge_black_white.svg" width = 1000](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
-
+[![My Application](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
 ## Model Evaluation
 *Feature importance plot based on **gain**. It quantifies the model’s accuracy improvement achieved by using specific features for splitting.*
