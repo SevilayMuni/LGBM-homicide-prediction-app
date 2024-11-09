@@ -56,7 +56,6 @@ with tab1.expander("Feature Importance Plot"):
 
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
-# ----------------------
 with tab2.expander("Infographics"):
     st.markdown('''Info on dataset''')
     st.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
