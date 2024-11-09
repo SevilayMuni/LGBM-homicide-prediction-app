@@ -7,9 +7,11 @@ import joblib
 
 pickled_model_app = joblib.load('./model_app.pkl')
 
-st.title('🕵🏻 Homicide Solve Prediction App')
-st.subheader('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
-st.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
+tab1, tab2, tab3 = st.tabs(["Prediction", "Chart", "Info"])
+
+tab1.title('🕵🏻 Homicide Solve Prediction App')
+tab1.subheader('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
+tab1.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 
 # Input features
 with st.sidebar:
@@ -47,7 +49,7 @@ predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 # Display result
 st.info(f"Predicted Result: {predicted_class}")
 
-st.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
+tab2.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
-st.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
+tab2.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
 
