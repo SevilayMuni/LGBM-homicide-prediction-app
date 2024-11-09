@@ -8,7 +8,7 @@ The model data source is [Murder Accountability Project](https://www.murderdata.
 
 ## Check Out My Application
 
-[[My Prediction App] <img src = "https://static.streamlit.io/badges/streamlit_badge_black_white.svg" width = 1000](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
+[<img src = "https://static.streamlit.io/badges/streamlit_badge_black_white.svg" width = 1000](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
 
 ## Model Evaluation
