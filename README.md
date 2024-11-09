@@ -8,15 +8,15 @@ The model data source is [Murder Accountability Project](https://www.murderdata.
 
 ## Check Out My Application
 
-[![My Prediction App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
+[![My Prediction App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg) width = 1000](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
 
 ## Model Evaluation
 *Feature importance plot based on **gain**. It quantifies the model’s accuracy improvement achieved by using specific features for splitting.*
-[<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png" width="500"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png)
+[<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png" width="600"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png)
 
 *Feature importance plot based on **split**. This measures the number of times a feature is used to split the data across all trees in the model.*
-[<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png" width="500"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png)
+[<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png" width="600"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png)
 
 All in all, **important features for homicide solvability**: 
 
@@ -44,7 +44,7 @@ Region| USA region in which the homicide was reported
 
 ## Contact 📩
 For any questions or inquiries, feel free to reach out:
-- [**My Website:**](https://sevilaymuni.github.io/Girgin/)
+- [**My Website**](https://sevilaymuni.github.io/Girgin/)
 - **LinkedIn:** [Sevilay Munire Girgin](www.linkedin.com/in/sevilay-munire-girgin-8902a7159)
 
 Thank you for visiting my project repository. Happy and accurate classification! 💕
