@@ -13,11 +13,6 @@ tab1.header('🕵🏻 Homicide Solve Prediction App')
 tab1.subheader('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
 tab1.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 
-with tab2.expander("Infographics"):
-    st.markdown('''Info on dataset''')
-    st.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
-
-
 # Input features
 with st.sidebar:
   st.header('INPUT FEATURES')
@@ -56,13 +51,17 @@ tab1.info(f"Predicted Result: {predicted_class}")
 
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
+with tab2.expander("Description Table on Input Features"):
+    st.image("./images2/feature-table.png")
 with tab2.expander("Feature Importance Plot"):
     st.markdown(''':violet[The chart above shows lightGBM feature importance plot based on gain.  
         It states what features heavily impacted the model's decision.]''')
     st.image("./images2/Gain-Feature-Importance-Plot.png")
 
+tab2.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
 
 tab2.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
+
 
 tab3.col1, tab3.col2, tab3.col3 = tab3.columns(3)
 with tab3.col1:
