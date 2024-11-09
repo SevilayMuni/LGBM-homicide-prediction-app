@@ -62,7 +62,15 @@ with tab2.expander("Feature Importance Plot"):
 
 with tab3.container(border = True):
     st.image("./images2/case-year-histogram.png")
-    st.image("./images2/victim-age-VS-offender-race.png")
+
+with tab3.container(border = True):
     st.image("./images2/victim-VS-offender-age.png")
 
+with tab3.container(border = True):
+    st.image("./images2/case-by-weapon.png")
+
+
+with tab3.popover("Open popover"):
+    st.image("./images2/case-year-histogram.png")
+    
 
