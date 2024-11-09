@@ -1,4 +1,4 @@
-# 🕵🏻 Homicide Solve Prediction App 👩🏻‍💻
+# 🕵🏻 Justice Forecast: Solvability Analysis for Homicide Cases 👩🏻‍💻
 
 ## The project is dedicated to all murder victims and their families whose justice has not been served yet.
 
@@ -11,15 +11,35 @@ The model data source is [Murder Accountability Project](https://www.murderdata.
 [![My Prediction App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
 
-## Section Heading
+## Model Evaluation
+*Feature importance plot based on **gain**. It quantifies the model’s accuracy improvement achieved by using specific features for splitting.*
+[<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png" width="500"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png)
 
-This is filler text, please replace this with text for this section.
+*Feature importance plot based on **split**. This measures the number of times a feature is used to split the data across all trees in the model.*
+[<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png" width="500"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png)
 
-## Further Reading
+All in all, **important features for homicide solvability**: 
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+    Relationship between the victim and offender
+    The circumstance (or theory) of the crime
+    Year of the homicide
+    Victim's Age
+
+## Variable Description Table
+
+Feature | Description |
+-----|-----|
+Agentype| Type of the law enforcement agency
+Year| Year of homicide (or victim’s body was recovered) 
+Month| The month of homicide (or victim’s body was recovered)
+Murder| 1: Murder & 0: Negligent Manslaughter
+VicAge| Victim’s age
+VicSex| Victim’s sex (“Unknown” gender: incomplete remains were recovered)
+VicRace| Victim’s race
+Weapon| Weapon used in the crime
+Relationship| The relationship between victim and offender
+Circumstance| The circumstances (or theory) of the crime
+VicCount| Victim number in the crime
+Region| USA region in which the homicide was reported
 
 *One's destination is never a place but rather a new way of seeing things. - Henry Miller*
