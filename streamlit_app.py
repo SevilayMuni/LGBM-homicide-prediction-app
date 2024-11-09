@@ -61,14 +61,14 @@ with tab2.expander("Feature Importance Plot"):
         It states what features heavily impacted the model's decision.]''')
     st.image("./images2/Gain-Feature-Importance-Plot.png")
 
-col1, col2 = tab3.columns(2)
+tab3.col1, tab3.col2 = tab3.columns(2)
 
 with tab3.col1:
-    with tab3.popover("Victim Data Graphs"):
+    with st.popover("Victim Data Graphs"):
         st.image("./images2/victim-age-race.png")
 
 with tab3.col2:
-    with tab3.popover("Offender Data Graphs"):
+    with st.popover("Offender Data Graphs"):
         st.image("./images2/offender-age-race.png")
 
 with tab3.container(border = True):
