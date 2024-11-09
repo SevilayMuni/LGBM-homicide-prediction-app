@@ -43,9 +43,10 @@ def process(user_dict):
     return pred
 
 prediction = process(user_dict)
+predicted_class = {0: 'unsolved', 1: 'solved'}[prediction]
 
 # Display result
-st.write(f"Result: {prediction}")
+st.write(f"Result: {predicted_class}")
 
 # predicted_class = {0: 'unsolved', 1: 'solved'}
 
