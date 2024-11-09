@@ -5,6 +5,10 @@ import numpy as np
 import pandas as pd
 import joblib
 
+[theme]
+base="dark"
+primaryColor="purple"
+
 pickled_model_app = joblib.load('./model_app.pkl')
 
 tab1, tab2, tab3 = st.tabs(["Prediction", "Info", "Charts"])
