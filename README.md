@@ -52,6 +52,4 @@ Thank you for visiting my project repository. Happy and accurate classification!
 | One's destination is never a place but rather a new way of seeing things. - Henry Miller |
 -----|
 
-<p align="center">
-// ***Copyright (c) 2024 Sevilay Münire Girgin***
-</p>
+<p align="center"> <b>Copyright (c) 2024 Sevilay Münire Girgin</b> </p>
