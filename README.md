@@ -42,4 +42,16 @@ Circumstance| The circumstances (or theory) of the crime
 VicCount| Victim number in the crime
 Region| USA region in which the homicide was reported
 
-*One's destination is never a place but rather a new way of seeing things. - Henry Miller*
+## Contact 📩
+For any questions or inquiries, feel free to reach out:
+- [**My Website:**](https://sevilaymuni.github.io/Girgin/)
+- **LinkedIn:** [Sevilay Munire Girgin](www.linkedin.com/in/sevilay-munire-girgin-8902a7159)
+
+Thank you for visiting my project repository. Happy and accurate classification! 💕
+
+| One's destination is never a place but rather a new way of seeing things. - Henry Miller |
+-----|
+
+<p align="center">
+// ***Copyright (c) 2024 Sevilay Münire Girgin***
+</p>
