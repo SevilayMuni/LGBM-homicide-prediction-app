@@ -53,6 +53,7 @@ predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 
 # Display result
 tab1.info(f"Predicted Result: {predicted_class}")
+
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
 with tab2.expander("Feature Importance Plot"):
@@ -76,4 +77,4 @@ with tab3.container(border = True):
 with tab3.container(border = True):
     st.image("./images2/victim-VS-offender-age.png")
     
-
+tab3.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
