@@ -12,7 +12,6 @@ tab1, tab2, tab3 = st.tabs(["Prediction", "Info", "Charts"])
 tab1.header('🕵🏻 Homicide Solve Prediction App')
 tab1.subheader('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
 tab1.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
-tab1.subheader('', divider = 'rainbow')
 
 with tab2.expander("Infographics"):
     st.markdown('''Info on dataset''')
@@ -64,5 +63,6 @@ with tab2.expander("Feature Importance Plot"):
 with tab3.container():
     st.image("./images2/case-year-histogram.png")
     st.image("./images2/victim-age-VS-offender-race.png")
+    st.image("./images2/victim-VS-offender-age.png")
 
 
