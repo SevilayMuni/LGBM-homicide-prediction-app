@@ -47,9 +47,9 @@ prediction = process(user_dict)
 predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 
 # Display result
-st.info(f"Predicted Result: {predicted_class}")
+tab1.info(f"Predicted Result: {predicted_class}")
 
-tab2.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
+tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
 tab2.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
 
