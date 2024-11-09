@@ -61,8 +61,10 @@ with tab2.expander("Feature Importance Plot"):
         It states what features heavily impacted the model's decision.]''')
     st.image("./images2/Gain-Feature-Importance-Plot.png")
 
-tab3.col1, tab3.col2, tab3.col3 = tab3.columns(3)
 
+tab2.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
+
+tab3.col1, tab3.col2, tab3.col3 = tab3.columns(3)
 with tab3.col1:
     with st.popover("Victim Data Graphs"):
         st.image("./images2/victim-age-race.png")
@@ -72,9 +74,8 @@ with tab3.col2:
         st.image("./images2/offender-age-race.png")
 
 with tab3.col3:
-    with st.popover("Offender Data Graphs"):
+    with st.popover("Victim vs. Offender"):
         st.image("./images2/victim-VS-offender-age.png")
-        st.image("./images2/victim-age-VS-offender-race.png")
 
 with tab3.container(border = True):
     st.image("./images2/case-year-histogram.png")
