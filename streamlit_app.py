@@ -8,13 +8,12 @@ import joblib
 pickled_model_app = joblib.load('./model_app.pkl')
 
 st.title('🕵🏻 Homicide Solve Prediction App')
-st.write('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
-st.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
-st.write('The model data source is Murder Accountability Project.')
+st.markdown('# The project is dedicated to all murder victims and their families whose justice has not been served yet.')
+st.info('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 
 # Input features
 with st.sidebar:
-  st.header('Input Features')
+  st.header('INPUT FEATURES')
   Agentype = st.selectbox('Agentype', ('local', 'state', 'federal'))
   Year = st.slider('Year', 1976, 2021)
   Month = st.slider('Month', 1, 12)
@@ -43,10 +42,11 @@ def process(user_dict):
     return pred
 
 prediction = process(user_dict)
-predicted_class = {0: 'UNSOLVED', 1: 'SOLVED'}[prediction]
+predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 
 # Display result
-st.write(f"Probable Result: {predicted_class}")
+st.success(f"Probable Result: {predicted_class}")
 
-# predicted_class = {0: 'unsolved', 1: 'solved'}
+st.write('The model data source is Murder Accountability Project.')
+st.write('End-to-end project is done by Sevilay Munire Girgin.')
 
