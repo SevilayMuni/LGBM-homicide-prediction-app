@@ -56,7 +56,7 @@ with tab1.expander("Feature Importance Plot"):
     st.write('''
         The chart above shows lightGBM feature importance plot based on gain.
         It states what features heavily impacted the model's decision. ''')
-    st.image("https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images/Gain-Feature-Importance-Plot.png")
+    st.image("./images/Gain-Feature-Importance-Plot.png")
 
 
 
