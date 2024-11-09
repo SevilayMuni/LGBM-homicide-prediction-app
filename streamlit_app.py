@@ -51,6 +51,17 @@ tab1.info(f"Predicted Result: {predicted_class}")
 
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
+
+tab2.markdown(
+        """
+        <style>
+        .streamlit-expanderHeader p {
+            font-size: 100px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 with tab2.expander("Description Table on Input Features"):
     st.image("./images2/feature-table.png")
 with tab2.expander("Feature Importance Plot"):
