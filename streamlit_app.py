@@ -7,9 +7,9 @@ import joblib
 
 pickled_model_app = joblib.load('./model_app.pkl')
 
-tab1, tab2, tab3 = st.tabs(["Prediction", "Chart", "Info"])
+tab1, tab2 = st.tabs(["Prediction", "Charts"])
 
-tab1.title('🕵🏻 Homicide Solve Prediction App')
+tab1.header('🕵🏻 Homicide Solve Prediction App')
 tab1.subheader('The project is dedicated to all murder victims and their families whose justice has not been served yet.')
 tab1.success('The project aims to conduct data science research and demonstrate the importance of accurately accounting for unsolved homicides within communities.')
 
@@ -49,7 +49,7 @@ predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
 # Display result
 tab1.info(f"Predicted Result: {predicted_class}")
 
-with tab1.expander("Feature Importance Plot 📉"):
+with tab1.expander("Feature Importance Plot"):
     st.markdown(''':violet[The chart above shows lightGBM feature importance plot based on gain.  
         It states what features heavily impacted the model's decision.]''')
     st.image("./images/Gain-Feature-Importance-Plot.png")
@@ -57,6 +57,7 @@ with tab1.expander("Feature Importance Plot 📉"):
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
 # ----------------------
-
-tab2.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
+with tab2.expander("Infographics"):
+    st.markdown('''Info on dataset''')
+    st.link_button("Data Source: Murder Accountability Project", "https://www.murderdata.org/")
 
