@@ -44,10 +44,10 @@ def process(user_dict):
     return pred
 
 prediction = process(user_dict)
-predicted_class = {0: 'UNSOLVED!', 1: 'SOLVED!'}[prediction]
+predicted_class = {0:'Will be UNSOLVED!', 1:'Will be SOLVED!'}[prediction]
 
 # Display result
-tab1.info(f"Predicted Result: {predicted_class}")
+tab1.info(f"Prediction: {predicted_class}")
 
 tab1.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
 
