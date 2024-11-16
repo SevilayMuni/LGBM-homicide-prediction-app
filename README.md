@@ -10,11 +10,15 @@ The model data source is [Murder Accountability Project](https://www.murderdata.
 
 [![My Application](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://sevilaygirgin-app-homicide-prediction.streamlit.app/)
 
+[![My Medium Article](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@sevilaymuniregirgin/justice-forecast-app-for-homicide-solvability-43536fef50ad)
+
 ## Model Evaluation
 *Feature importance plot based on **gain**. It quantifies the model’s accuracy improvement achieved by using specific features for splitting.*
+
 [<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png" width="600"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Gain-Feature-Importance-Plot.png)
 
 *Feature importance plot based on **split**. This measures the number of times a feature is used to split the data across all trees in the model.*
+
 [<img src="https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png" width="600"/>](https://github.com/SevilayMuni/LGBM-homicide-prediction-app/blob/master/images2/Split-Feature-Importance-Plot.png)
 
 All in all, **important features for homicide solvability**: 
