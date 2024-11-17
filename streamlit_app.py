@@ -90,4 +90,4 @@ with tab3.container(border = True):
 with tab3.container(border = True):
     st.image("./images2/case-by-weapon.png")
     
-tab3.markdown(''':rainbow[End-to-end project is done by] and :blue-background[Sevilay Munire Girgin]''')
+tab3.markdown(''':rainbow[End-to-end project is done by] :blue-background[Sevilay Munire Girgin]''')
