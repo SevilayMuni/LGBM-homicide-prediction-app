@@ -6,7 +6,7 @@ import pandas as pd
 import joblib
 
 pickled_model_app = joblib.load('./model_app.pkl')
-
+st.set_page_config(page_title ="Justice Forecast App",  page_icon = "🕵🏻")
 tab1, tab2, tab3 = st.tabs(["Prediction", "Info", "Charts"])
 
 tab1.header('🕵🏻 Justice Forecast App: Solvability Analysis for Homicide Cases')
